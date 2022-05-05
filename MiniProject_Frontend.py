@@ -10,6 +10,7 @@ class Movie:
 		self.root.title("Online Movie Ticket Booking System")
 		self.root.geometry("1350x750+0+0")
 		self.root.config(bg="black")
+		MiniProject_Backend.MovieData()
 
 		Movie_Name=StringVar()
 		Movie_ID=StringVar()

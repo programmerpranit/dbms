@@ -4,7 +4,7 @@ import sqlite3
 def MovieData():
     con=sqlite3.connect("movie1.db") 
     cur=con.cursor()
-    cur.execute("CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, Movie_ID text,Movie_Name text,Release_Date text,Director text,Cast text,Budget text,Duration text,Rating text")
+    cur.execute("CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, Movie_ID varchar,Movie_Name varchar,Release_Date varchar,Director varchar,Cast varchar,Budget varchar,Duration varchar,Rating varchar)")
     con.commit()
     con.close()
     
